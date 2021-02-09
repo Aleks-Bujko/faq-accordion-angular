@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionDatabase } from '../question-database';
 
 @Component({
   selector: 'app-single-question',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./single-question.component.sass']
 })
 export class SingleQuestionComponent implements OnInit {
+
+
+  questions = QuestionDatabase;
 
   constructor() { }
 
