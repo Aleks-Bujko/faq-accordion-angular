@@ -9,5 +9,5 @@ export const QuestionDatabase: QuestionAnswer[] = [
 
     { id: 4, question: 'Can I cancel my subscription?', answer: 'Yes! Send us a message and we’ll process your request no questions asked.' },
 
-    { id: 4, question: 'Do you provide additional support?', answer: 'Chat and email support is available 24/7. Phone lines are open during normal business hours.' },
+    { id: 5, question: 'Do you provide additional support?', answer: 'Chat and email support is available 24/7. Phone lines are open during normal business hours.' },
 ];

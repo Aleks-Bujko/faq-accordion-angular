@@ -1,5 +1,7 @@
-<div *ngFor="let question of questions">
-    <div class="faq-tab">
-        <input type="radio" id="id1" name="rd">{{question.question}}</div> 
-    <div class="faq-content">{{question.answer}}</div>
+<div class="faq-qa-wrapper">
+    <div *ngFor="let question of questions" class="faq-single-qa">
+        <input type="checkbox" id={{question.id}}/>
+        <label class="faq-label" for={{question.id}}>{{question.question}}</label>
+        <div class="faq-content">{{question.answer}}</div>
+    </div>
 </div>

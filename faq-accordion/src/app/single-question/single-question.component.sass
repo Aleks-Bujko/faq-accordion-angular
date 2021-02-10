@@ -1,0 +1,44 @@
+input
+    display: none
+
+.faq-qa-wrapper
+    overflow: hidden
+
+.faq-single-qa
+    width: 100%
+    overflow: hidden
+    border-bottom: 1px solid #E7E7E9
+
+.faq-label
+    display: flex
+    justify-content: space-between
+    padding: 1em 1em 1em 0
+    margin: 0 0 1px 0
+    cursor: pointer
+    border-radius: 5px
+    width: 25em
+
+    &::after
+        content: url('../../assets/icon-arrow-down.svg')
+        transition: .5s all
+
+.faq-content
+    padding: 1em 1em 1em 0
+    transition: all 3s
+    width: 25em
+    font-weight: 400
+    color: #787887
+    line-height: 1.3em
+
+input + .faq-label + .faq-content
+    display: none
+
+input:checked + .faq-label + .faq-content
+    display: block
+
+input:checked 
+    + .faq-label 
+        font-weight: 700
+        &::after
+            transform: rotate(180deg)
+            transition: .5s all
