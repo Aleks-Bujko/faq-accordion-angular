@@ -1,3 +1,5 @@
 <div *ngFor="let question of questions">
-    <span>{{question.question}} {{question.answer}}</span>
+    <div class="faq-tab">
+        <input type="radio" id="id1" name="rd">{{question.question}}</div> 
+    <div class="faq-content">{{question.answer}}</div>
 </div>
