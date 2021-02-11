@@ -1,3 +1,5 @@
+@import "../../../src/styles.sass"
+
 input
     display: none
 
@@ -12,20 +14,18 @@ input
 .faq-label
     display: flex
     justify-content: space-between
-    padding: 1em 1em 1em 0
+    padding: 1em 0em 1em 0
     margin: 0 0 1px 0
     cursor: pointer
     border-radius: 5px
-    width: 25em
 
     &::after
         content: url('../../assets/icon-arrow-down.svg')
         transition: .5s all
 
 .faq-content
-    padding: 1em 1em 1em 0
+    padding: 1em 0em 1em 0
     transition: all 3s
-    width: 25em
     font-weight: 400
     color: #787887
     line-height: 1.3em
@@ -42,3 +42,10 @@ input:checked
         &::after
             transform: rotate(180deg)
             transition: .5s all
+
+
+@media($desktop-width)
+    .faq-label
+        width: 25em
+    .faq-content
+        width: 25em
